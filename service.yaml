@@ -11,8 +11,10 @@ spec:
       protocol: TCP
       port: 9000
       targetPort: 9000
+      nodePort: 30000
     - name: console
       protocol: TCP
       port: 9001
       targetPort: 9001
-  type: ClusterIP
+      nodePort: 30001
+  type: NodePort
