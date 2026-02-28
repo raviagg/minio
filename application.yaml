@@ -8,12 +8,8 @@ spec:
 
   source:
     repoURL: https://github.com/raviagg/minio.git
-    chart: minio
     targetRevision: main
     path: .
-    helm:
-      valueFiles:
-        - values.yaml
 
   destination:
     server: https://kubernetes.default.svc
